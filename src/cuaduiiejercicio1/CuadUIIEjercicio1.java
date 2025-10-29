@@ -14,7 +14,16 @@ public class CuadUIIEjercicio1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+         int salarioNeto;
+        int pagoXHoras = 20, horasTrabajadas = 35;
+
+        if (horasTrabajadas >= 40) {
+            salarioNeto = (pagoXHoras * horasTrabajadas) + 500;
+        } else {
+            salarioNeto = pagoXHoras * horasTrabajadas;
+        }
+
+        System.out.println("El salario del empleado es " + salarioNeto);
     }
     
 }
